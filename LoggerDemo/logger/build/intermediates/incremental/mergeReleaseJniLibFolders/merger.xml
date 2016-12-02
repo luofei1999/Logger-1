@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Administrator.PC-20150904JUVJ\Desktop\LoggerDemo\logger\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="C:\Users\Administrator.PC-20150904JUVJ\Desktop\LoggerDemo\logger\src\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\zhu\Logger\LoggerDemo\logger\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="E:\zhu\Logger\LoggerDemo\logger\src\release\jniLibs"/></dataSet></merger>

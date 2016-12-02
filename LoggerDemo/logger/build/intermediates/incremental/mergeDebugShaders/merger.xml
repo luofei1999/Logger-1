@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Administrator.PC-20150904JUVJ\Desktop\LoggerDemo\logger\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Administrator.PC-20150904JUVJ\Desktop\LoggerDemo\logger\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\zhu\Logger\LoggerDemo\logger\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\zhu\Logger\LoggerDemo\logger\src\debug\shaders"/></dataSet></merger>
