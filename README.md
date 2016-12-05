@@ -124,4 +124,4 @@ public class CacheAdapter implements LogAdapter {
 ```
 最后,我们就可以进入我们制定的文件路径找到我们保存的日志文件了
 
-#[点击进入源码地址] (http://blog.csdn.net/zybieku/article/details/53467341)
+ http://blog.csdn.net/zybieku/article/details/53467341 博客地址
