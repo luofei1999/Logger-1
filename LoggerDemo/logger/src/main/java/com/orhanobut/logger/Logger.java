@@ -8,119 +8,119 @@ import java.util.Map;
  */
 public final class Logger {
 
-  private static final String DEFAULT_TAG = "PRETTYLOGGER";
+    private static final String DEFAULT_TAG = "PRETTYLOGGER";
 
-  private static Printer printer = new LoggerPrinter();
+    private static Printer printer = new LoggerPrinter();
 
-  //no instance
-  private Logger() {
-  }
+    //no instance
+    private Logger() {
+    }
 
-  /**
-   * It is used to get the settings object in order to change settings
-   *
-   * @return the settings object
-   */
-  public static Settings init() {
-    return init(DEFAULT_TAG);
-  }
+    /**
+     * It is used to get the settings object in order to change settings
+     *
+     * @return the settings object
+     */
+    public static Settings init() {
+        return init(DEFAULT_TAG);
+    }
 
-  /**
-   * It is used to change the tag
-   *
-   * @param tag is the given string which will be used in Logger as TAG
-   */
-  public static Settings init(String tag) {
-    printer = new LoggerPrinter();
-    return printer.init(tag);
-  }
+    /**
+     * It is used to change the tag
+     *
+     * @param tag is the given string which will be used in Logger as TAG
+     */
+    public static Settings init(String tag) {
+        printer = new LoggerPrinter();
+        return printer.init(tag);
+    }
 
-  public static void resetSettings() {
-    printer.resetSettings();
-  }
+    public static void resetSettings() {
+        printer.resetSettings();
+    }
 
-  public static Printer t(String tag) {
-    return printer.t(tag, printer.getSettings().getMethodCount());
-  }
+    public static Printer t(String tag) {
+        return printer.t(tag, printer.getSettings().getMethodCount());
+    }
 
-  public static Printer t(int methodCount) {
-    return printer.t(null, methodCount);
-  }
+    public static Printer t(int methodCount) {
+        return printer.t(null, methodCount);
+    }
 
-  public static Printer t(String tag, int methodCount) {
-    return printer.t(tag, methodCount);
-  }
+    public static Printer t(String tag, int methodCount) {
+        return printer.t(tag, methodCount);
+    }
 
-  public static void log(int priority, String tag, String message, Throwable throwable) {
-    printer.log(priority, tag, message, throwable);
-  }
+    public static void log(int priority, String tag, String message, Throwable throwable) {
+        printer.log(priority, tag, message, throwable);
+    }
 
-  public static void d(String message, Object... args) {
-    printer.d(message, args);
-  }
+    public static void d(String message, Object... args) {
+        printer.d(message, args);
+    }
 
-  public static void d(Object object) {
-    printer.d(object);
-  }
+    public static void d(Object object) {
+        printer.d(object);
+    }
 
-  public static void e(String message, Object... args) {
-    printer.e(null, message, args);
-  }
+    public static void e(String message, Object... args) {
+        printer.e(null, message, args);
+    }
 
-  public static void e(Throwable throwable, String message, Object... args) {
-    printer.e(throwable, message, args);
-  }
+    public static void e(Throwable throwable, String message, Object... args) {
+        printer.e(throwable, message, args);
+    }
 
-  public static void i(String message, Object... args) {
-    printer.i(message, args);
-  }
+    public static void i(String message, Object... args) {
+        printer.i(message, args);
+    }
 
-  public static void v(String message, Object... args) {
-    printer.v(message, args);
-  }
+    public static void v(String message, Object... args) {
+        printer.v(message, args);
+    }
 
-  public static void w(String message, Object... args) {
-    printer.w(message, args);
-  }
+    public static void w(String message, Object... args) {
+        printer.w(message, args);
+    }
 
-  public static void wtf(String message, Object... args) {
-    printer.wtf(message, args);
-  }
+    public static void wtf(String message, Object... args) {
+        printer.wtf(message, args);
+    }
 
-  /**
-   * Formats the json content and print it
-   *
-   * @param json the json content
-   */
-  public static void json(String json) {
-    printer.json(json);
-  }
+    /**
+     * Formats the json content and print it
+     *
+     * @param json the json content
+     */
+    public static void json(String json) {
+        printer.json(json);
+    }
 
-  /**
-   * Formats the json content and print it
-   *
-   * @param xml the xml content
-   */
-  public static void xml(String xml) {
-    printer.xml(xml);
-  }
+    /**
+     * Formats the json content and print it
+     *
+     * @param xml the xml content
+     */
+    public static void xml(String xml) {
+        printer.xml(xml);
+    }
 
 
-  /**
-   * Formats the json content and print it
-   *
-   * @param map the Map content
-   */
-  public static void map(Map map) {
-    printer.map(map);
-  }
+    /**
+     * Formats the json content and print it
+     *
+     * @param map the Map content
+     */
+    public static void map(Map map) {
+        printer.map(map);
+    }
 
-  /**
-   * Formats the json content and print it
-   *
-   * @param objects the arr content
-   */
-  public static void array(Object[] objects) {
-    printer.array(objects);
-  }
+    /**
+     * Formats the json content and print it
+     *
+     * @param objects the arr content
+     */
+    public static void array(Object[] objects) {
+        printer.array(objects);
+    }
 }

@@ -364,14 +364,12 @@ final class LoggerPrinter implements Printer {
     private void logHeaderContent(int logType, String tag, int methodCount) {
         StackTraceElement[] trace = Thread.currentThread().getStackTrace();
         String level = "";
-
         int stackOffset = getStackOffset(trace) + settings.getMethodOffset();
 
         //corresponding method count with the current stack may exceeds the stack trace. Trims the count
         if (methodCount + stackOffset > trace.length) {
             methodCount = trace.length - stackOffset - 1;
         }
-
         for (int i = methodCount; i > 0; i--) {
             int stackIndex = i + stackOffset;
             if (stackIndex >= trace.length) {
@@ -415,7 +413,7 @@ final class LoggerPrinter implements Printer {
             _stringBuilder.append(line);
             _stringBuilder.append(System.getProperty("line.separator"));
         }
-        logChunk(logType, tag, _stringBuilder.toString() );
+        logChunk(logType, tag, _stringBuilder.toString());
     }
 
     private void logChunk(int logType, String tag, String chunk) {

@@ -30,6 +30,14 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+task makeJar(type: Copy) {
+    delete 'build/libs/poponLogger_1.0.0.jar'
+    from('build/intermediates/bundles/release/')
+    into('build/libs/')
+    include('classes.jar')
+    rename ('classes.jar', 'poponLogger_1.0.0.jar')
+}
+makeJar.dependsOn(build)
 
 publish {
     userOrg = 'popon'//bintray.com用户名
