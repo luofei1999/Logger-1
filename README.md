@@ -7,6 +7,9 @@
  - 可以控制日志的显示和缓存级别;
 
 -------------------
+[我的博客](http://blog.csdn.net/zybieku/article/details/53467341)  
+[poponLogger.jar包下载](http://download.csdn.net/detail/zybieku/9702363)  
+-------------------
 ### 使用详解###
  **1.无特殊需求,直接可以使用,默认配置,无需手动初始化操作:**
 ```
@@ -124,4 +127,4 @@ public class CacheAdapter implements LogAdapter {
 ```
 最后,我们就可以进入我们制定的文件路径找到我们保存的日志文件了
 
- http://blog.csdn.net/zybieku/article/details/53467341 博客地址
+
