@@ -32,18 +32,19 @@
        .methodOffset(2);     //定位的偏移量
      
 ```
->效果如下:
->
-![这里写图片描述](http://img.blog.csdn.net/20161205185245145)
+-------------------
+>  效果如下:
+>  
+[这里写图片描述](http://img.blog.csdn.net/20161205185245145)
 
 
 效果是不是很不错,是不是想自己尝试一下捏;
 
 别着急,我们还需要注意几点:
-
- > - xml,json,map信息都是属于Info级别的日志,我们需要在init中吧level设置在info或者以下,否则将不会在控制台打印.
+>
+ xml,json,map信息都是属于Info级别的日志,我们需要在init中吧level设置在info或者以下,否则将不会在控制台打印.
  
- 
+> 
 ```
  logLevel(LogLevel.INFO)
  
