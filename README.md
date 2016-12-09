@@ -43,9 +43,10 @@
 
  > - xml,json,map信息都是属于Info级别的日志,我们需要在init中吧level设置在info或者以下,否则将不会在控制台打印.
  
-
+ 
 ```
-.logLevel(LogLevel.INFO)
+ logLevel(LogLevel.INFO)
+ 
 ```
 
 
