@@ -194,13 +194,13 @@ document.getElementById(id+'Link').style.display = 'none';
 <body>
 <h1>Lint Report</h1>
 <div class="titleSeparator"></div>
-Check performed at Mon Dec 05 19:35:42 CST 2016.<br/>
-0 errors and 2 warnings found:<br/><br/>
+Check performed at Tue May 02 18:32:35 CST 2017.<br/>
+0 errors and 1 warnings found:<br/><br/>
 <table class="overview">
 <tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
 </td></tr>
 <tr>
-<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" width="16" height="15" alt="Warning" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAQAAABHeoekAAAA3klEQVR42nWPsWoCQRCGVyJiF9tAsNImbcDKR/ABBEurYCsBsfQRQiAPYGPyAAnYWQULS9MErNU2Vsr/ObMX7g6O+xd2/5n5dmY3hFQEBVVpuCsVT/yoUl6u4XotBz4E4qR2YYyH6ugEWY8comR/t+tvPPJtSLPYvhvvTswtbdCmCOwjMHXAzjP9kB/ByB7nejbgy43WVPF3WNG+p9+kzkozdhGAQdZh7BlHdGTL3z98pp6Um7okKdvHNuIzWk+9xN+yINOcHps0OnAfuOOoHJH3pmHghhYP2VJcaXx7BaKz9YB2HVrDAAAAAElFTkSuQmCC"/>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" width="16" height="15" alt="Warning" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAQAAABHeoekAAAA3klEQVR42nWPsWoCQRCGVyJiF9tAsNImbcDKR/ABBEurYCsBsfQRQiAPYGPyAAnYWQULS9MErNU2Vsr/ObMX7g6O+xd2/5n5dmY3hFQEBVVpuCsVT/yoUl6u4XotBz4E4qR2YYyH6ugEWY8comR/t+tvPPJtSLPYvhvvTswtbdCmCOwjMHXAzjP9kB/ByB7nejbgy43WVPF3WNG+p9+kzkozdhGAQdZh7BlHdGTL3z98pp6Um7okKdvHNuIzWk+9xN+yINOcHps0OnAfuOOoHJH3pmHghhYP2VJcaXx7BaKz9YB2HVrDAAAAAElFTkSuQmCC"/>
 <a href="#GradleDependency">GradleDependency: Obsolete Gradle Dependency</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (16)</a>
@@ -214,19 +214,11 @@ Check performed at Mon Dec 05 19:35:42 CST 2016.<br/>
 <div class="id"><a href="#" title="Return to top">GradleDependency: Obsolete Gradle Dependency</a><div class="issueSeparator"></div>
 </div>
 <div class="warningslist">
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:8</span>: <span class="message">Old buildToolsVersion 24.0.0; recommended version is 24.0.1 or later</span><br /><pre class="errorlines">
-<span class="lineno">   5</span> 
-<span class="lineno">   6</span> android {
-<span class="lineno">   7</span>     compileSdkVersion 24
-<span class="lineno">   8</span>     <span class="errorspan">buildToolsVersion "24.0.0"</span>
-<span class="lineno">   9</span>     defaultConfig {
-<span class="lineno">  10</span>         minSdkVersion 14
-</pre>
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:29</span>: <span class="message">A newer version of com.android.support:appcompat-v7 than 24.2.1 is available: 25.0.0</span><br /><pre class="errorlines">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:29</span>: <span class="message">A newer version of com.android.support:appcompat-v7 than 24.2.1 is available: 25.3.1</span><br /><pre class="errorlines">
 <span class="lineno">  26</span>     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
 <span class="lineno">  27</span>         exclude group: 'com.android.support', module: 'support-annotations'
 <span class="lineno">  28</span>     })
-<span class="lineno">  29</span>     <span class="errorspan">compile 'com.android.support:appcompat-v7:24.2.1'</span>
+<span class="lineno">  29</span>     <span class="errorspan">compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"</span>
 <span class="lineno">  30</span>     testCompile 'junit:junit:4.12'
 <span class="lineno">  31</span> }
 </pre>

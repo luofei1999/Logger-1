@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\zhu\Logger\LoggerDemo\logger\src\main\assets"/><source path="E:\zhu\Logger\LoggerDemo\logger\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\zhu\Logger\LoggerDemo\logger\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\github_project\Logger\LoggerDemo\logger\src\main\assets"/><source path="E:\github_project\Logger\LoggerDemo\logger\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\github_project\Logger\LoggerDemo\logger\src\debug\assets"/></dataSet></merger>
